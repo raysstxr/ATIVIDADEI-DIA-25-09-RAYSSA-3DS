@@ -1,19 +1,13 @@
 <?php
-// ====================================================================
-// PÁGINA PRINCIPAL DE CONSULTAS (index.php)
-// ====================================================================
 
-// 1. Importa o arquivo de conexão criado anteriormente
 require_once "conexao.php";
 
-// 2. Instrução SQL de consulta (DQL)
-// Adaptado ao schema do exercício: a categoria é uma coluna de tbl_produtos
-// (não existe tbl_categoria nem coluna de estoque), então não há JOIN.
+
 $sql = "SELECT id, nome AS produto, preco, categoria
         FROM tbl_produtos
         ORDER BY id ASC";
 
-// 3. Executa a consulta SQL dentro do banco de dados conectado
+
 $resultado = mysqli_query($conexao, $sql);
 ?>
 <!DOCTYPE html>
