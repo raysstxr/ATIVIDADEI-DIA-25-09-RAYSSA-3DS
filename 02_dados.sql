@@ -1,10 +1,5 @@
--- ====================================================================
--- ETEC - Centro Paula Souza
--- Laboratório Prático: População do Esquema db_sistema_vendas (DML)
--- ====================================================================
-USE db_sistema_vendas;
 
--- 1. CLIENTES (30 registros)
+
 INSERT INTO tbl_clientes (nome, email, cidade) VALUES
 ('Ana Silva', 'ana.silva@email.com', 'São Paulo'),
 ('Bruno Oliveira', 'bruno.oliveira@email.com', 'Campinas'),
